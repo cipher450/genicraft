@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@font-face {
+  font-family: 'Glitch';
+  src: url('./assets/fonts/GlitchGoblin-2O87v.ttf') format('truetype');
+}
+
+
+.Logo{
+  font-family: 'Glitch';
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #0F131A !important;
+  color: #f0eeed !important;
+  
+}
+
+.container{
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
