@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function MarkdownEditor() {
+export default function Script() {
   return (
     <div>
       

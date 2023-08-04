@@ -28,3 +28,4 @@ app.use('/',router);
 app.listen(configData.port, () => {
   console.log(`Server is running on port :${configData.port}`);
 });
+

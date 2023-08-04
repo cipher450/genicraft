@@ -2,10 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @font-face {
   font-family: 'Glitch';
-  src: url('./assets/fonts/GlitchGoblin-2O87v.ttf') format('truetype');
+  src: url('../assets/fonts/GlitchGoblin-2O87v.ttf') format('truetype');
 }
 
 
@@ -15,18 +15,55 @@
 
 
 body {
+  font-family: 'Roboto' !important;
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #0F131A !important;
+  background-color: #182336 !important;
   color: #f0eeed !important;
   
 }
-
+/*
+background-color: #0F131A !important;
+*/
 .container{
   padding: 10px;
   margin: 10px;
   color: white;
+}
+
+
+
+.mainpage{
+  font-size: 2rem;
+  display: flex ;
+ 
+  align-items: center;
+  align-content: center;
+  padding: 10%;
+  border-radius: 12px;
+  background-color: #1a22309c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+z-index: 99999;
+}
+
+.instagram-post {
+  max-width:43%; /* Set a maximum width for the post */
+
+
+}
+
+.instagram-image {
+  width: 100%; /* Make the image fill the container width */
+  height: auto; /* Maintain the original image aspect ratio */
+  max-width: 100%; /* Prevent images from exceeding their original size */
 }
