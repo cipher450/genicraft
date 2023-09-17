@@ -272,70 +272,239 @@ export const wrtingStyles = [
   { label: "Critical", value: "Critical" },
 ];
 
+export const tools = {
+  copywriting: [
+    {
+      id: 0,
+      title: "Article Generator",
+      description: "Generate quality custom articles/copy",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 1,
+      title: "Product Description",
+      description: "Generate description of a product/service",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 2,
+      title: "Email Crafting",
+      description: "Craft the perfect email for you'r audience",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 3,
+      title: "Landing page",
+      description: "Create a landing page with zero coding knowledge",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    
+  ],
+  GraphicDesign:[
+    /*
 
-export const tools =[
-  {
-    id:0,
-    title:"Article Generator",
-    description:"Generate quality custom articles",
-    icon:"enhance.png",
-    categorie:"Article",
-  },
-  {
-    id:1,
-    title:"Article Enhancer",
-    description:"Enhance an existing Text & get a rating",
-    icon:"e.png",
-    categorie:"Article",
-  },
-  {
-    id:2,
-    title:"Story",
-    description:"Write a full story with little context",
-    icon:".png",
-    categorie:"long",
-  },
-  {
-    id:3,
-    title:"Script",
-    description:"",
-    icon:".png",
-    categorie:"long",
-  },{
-    id:4,
-    title:"Product list Workflow",
-    description:"Workflow for mass production of product lists write a complete amazon product list in minutes",
-    icon:".png",
-    categorie:"Article",
-  },{
-    id:5,
-    title:"FreeStyle",
-    description:"a text editor and ai GO WILD !",
-    icon:".png",
-    categorie:"Article",
-  },{
-    id:6,
-    title:"Prodcut review",
-    description:"an in depth review of a single product , with pros and cons and a link to the product",
-    icon:".png",
-    categorie:"Article",
-  },{
-    id:7,
-    title:"How to Guide",
-    description:"",
-    icon:".png",
-    categorie:"Article",
-  },
-  {
-    id:8,
-    title:"documentation",
-    description:"",
-    icon:".png",
-    categorie:"Article",
-  }
-]
+    */
+    {
+      id: 0,
+      title: "Article Generator",
+      description: "Generate quality custom articles/copy",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 1,
+      title: "Product Description",
+      description: "Generate description of a product/service",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 2,
+      title: "Email Crafting",
+      description: "Craft the perfect email for you'r audience",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 3,
+      title: "Landing page",
+      description: "Create a landing page with zero coding knowledge",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+  ],
+  ContentCation:[
+    /*
+
+    */
+    {
+      id: 0,
+      title: "Article Generator",
+      description: "Generate quality custom articles/copy",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 1,
+      title: "Product Description",
+      description: "Generate description of a product/service",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 2,
+      title: "Email Crafting",
+      description: "Craft the perfect email for you'r audience",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 3,
+      title: "Landing page",
+      description: "Create a landing page with zero coding knowledge",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+  ],
+  WebsiteDevelopment:[
+    /*
+
+    */
+    {
+      id: 0,
+      title: "Article Generator",
+      description: "Generate quality custom articles/copy",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 1,
+      title: "Product Description",
+      description: "Generate description of a product/service",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 2,
+      title: "Email Crafting",
+      description: "Craft the perfect email for you'r audience",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 3,
+      title: "Landing page",
+      description: "Create a landing page with zero coding knowledge",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+  ],
+  GraphicDesign:[
+    /*
+
+    */
+    {
+      id: 0,
+      title: "Article Generator",
+      description: "Generate quality custom articles/copy",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 1,
+      title: "Product Description",
+      description: "Generate description of a product/service",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 2,
+      title: "Email Crafting",
+      description: "Craft the perfect email for you'r audience",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 3,
+      title: "Landing page",
+      description: "Create a landing page with zero coding knowledge",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+  ],
+};
 
 /*
+
+  {
+      id: 0,
+      title: "Article Generator",
+      description: "Generate quality custom articles",
+      icon: "enhance.png",
+      categorie: "Article",
+    },
+    {
+      id: 1,
+      title: "Article Enhancer",
+      description: "Enhance an existing Text & get a rating",
+      icon: "e.png",
+      categorie: "Article",
+    },
+    {
+      id: 2,
+      title: "Story",
+      description: "Write a full story with little context",
+      icon: ".png",
+      categorie: "long",
+    },
+    {
+      id: 3,
+      title: "Script",
+      description: "",
+      icon: ".png",
+      categorie: "long",
+    },
+    {
+      id: 4,
+      title: "Product list Workflow",
+      description:
+        "Workflow for mass production of product lists write a complete amazon product list in minutes",
+      icon: ".png",
+      categorie: "Article",
+    },
+    {
+      id: 5,
+      title: "FreeStyle",
+      description: "a text editor and ai GO WILD !",
+      icon: ".png",
+      categorie: "Article",
+    },
+    {
+      id: 6,
+      title: "Prodcut review",
+      description:
+        "an in depth review of a single product , with pros and cons and a link to the product",
+      icon: ".png",
+      categorie: "Article",
+    },
+    {
+      id: 7,
+      title: "How to Guide",
+      description: "",
+      icon: ".png",
+      categorie: "Article",
+    },
+    {
+      id: 8,
+      title: "documentation",
+      description: "",
+      icon: ".png",
+      categorie: "Article",
+    },
 ,{
     id:,
     title:"",

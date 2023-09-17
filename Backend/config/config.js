@@ -4,7 +4,7 @@ const { Configuration, OpenAIApi } = require("openai");
 
 dotenv.config();
 
-const { PORT ,OpenAI,StableDiffusion } = process.env;
+const { PORT ,OpenAI,StableDiff,huggingface } = process.env;
 
 assert(PORT, "PORT configuration is required.");
 
@@ -18,6 +18,8 @@ const gpt = new OpenAIApi(Configurations);
 
 module.exports = {
     port: PORT,
-    openai:gpt
+    openai:gpt,
+    StableDiff,
+    huggingface
   };
   

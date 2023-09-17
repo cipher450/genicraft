@@ -23,6 +23,8 @@ import { languages, tones, wrtingStyles } from "../../../store/strings";
 import { IsEmpty } from "../../../Helpers";
 import { useEffect, useRef, useState } from "react";
 import { server } from "../../../store/store";
+import SocialPost from "../../Controls/SocialPost";
+
 export default function Instagram() {
   const dispatch = useDispatch();
   const [loading, SetLoading] = useState(false);
@@ -121,6 +123,7 @@ export default function Instagram() {
         body: JSON.stringify(params),
       });
       const json = await response.json();
+      
       console.log(json);
     } else {
       alert(isempty);
@@ -138,7 +141,7 @@ export default function Instagram() {
               <Button
                 color="green"
                 appearance="primary"
-                 
+                onClick={HandleNewRequest}
                 style={{ minWidth: "100px" }}
               >
                 Generate
@@ -248,83 +251,16 @@ export default function Instagram() {
               </Panel>
             </PanelGroup>
           </div>
-          <div className="lg:w-1/2  flex lg:flex-row flex-col gap-5 ">
-            <Panel
-              className="lg:w-2/3"
-              style={{
-                color:
-                  activeTheme.active == "dark"
-                    ? activeTheme.dark.textCol
-                    : activeTheme.light.textCol,
-                backgroundColor:
-                  activeTheme.active == "dark"
-                    ? activeTheme.dark.bg
-                    : activeTheme.light.bg,
-              }}
-            >
-              <div className="w-full">
-                <img
-                  src="https://wallpapers.com/images/featured/king-r1u1vqmotb8q46vq.jpg"
-                  className="w-1/2 m-auto"
-                />
-              </div>
-
-              <div className="mt-3">
-                <img
-                  src="https://beconnected.esafety.gov.au/pluginfile.php/69186/mod_resource/content/1/t26_c4_a1_p7.png"
-                  width={"100px"}
-                />
-              </div>
-              <p>
-                <small>
-                  🔥 Exciting News! Introducing the incredible Gator Rad – the
-                  ultimate companion for your outdoor adventures! 🚴‍♂️🌄 Whether
-                  you're hitting the trails or cruising through the city, the
-                  Gator Rad has got you covered with its cutting-edge features
-                  and sleek design. 🔹 Unleash the Power: Experience the thrill
-                  of high-performance biking with Gator Rad's advanced
-                  technology.
-                </small>
-              </p>
-            </Panel>
-            <Panel
-              className="lg:w-2/3"
-              style={{
-                color:
-                  activeTheme.active == "dark"
-                    ? activeTheme.dark.textCol
-                    : activeTheme.light.textCol,
-                backgroundColor:
-                  activeTheme.active == "dark"
-                    ? activeTheme.dark.bg
-                    : activeTheme.light.bg,
-              }}
-            >
-              <div className="w-full">
-                <img
-                  src="https://wallpapers.com/images/featured/king-r1u1vqmotb8q46vq.jpg"
-                  className="w-1/2 m-auto"
-                />
-              </div>
-
-              <div className="mt-3">
-                <img
-                  src="https://beconnected.esafety.gov.au/pluginfile.php/69186/mod_resource/content/1/t26_c4_a1_p7.png"
-                  width={"100px"}
-                />
-              </div>
-              <p>
-                <small>
-                  🔥 Exciting News! Introducing the incredible Gator Rad – the
-                  ultimate companion for your outdoor adventures! 🚴‍♂️🌄 Whether
-                  you're hitting the trails or cruising through the city, the
-                  Gator Rad has got you covered with its cutting-edge features
-                  and sleek design. 🔹 Unleash the Power: Experience the thrill
-                  of high-performance biking with Gator Rad's advanced
-                  technology.
-                </small>
-              </p>
-            </Panel>
+          <div className="lg:w-2/3  flex lg:flex-row flex-col gap-5 m-auto flex-wrap items-center justify-center">
+            {posts.map((post,i) => (
+              <SocialPost
+              key={i}
+                activeTheme={activeTheme}
+                description={post.description}
+                hashtags={post.hashtags}
+                image={post.image}
+              />
+            ))}
           </div>
         </div>
       )}

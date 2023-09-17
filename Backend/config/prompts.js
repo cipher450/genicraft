@@ -20,32 +20,39 @@ module.exports = {
         Article must meet a specifed word count.
         Formating the article in Markdown Formating.
         inserting numbred images for each paragraphe in the article.
-        `
+        `,
       },
-      EnhanceArticle :{
-        role : "System",
-        content:`
+      EnhanceArticle: {
+        role: "System",
+        content: `
         prompt : 
         you will be given articles formatted in markdown
         
         instruction :
         
         Extend each paragraphe with more information.
-        Markdown Formated response`
-      }
-      
+        Markdown Formated response`,
+      },
     },
-    socialMedia:{
-      posts:{
+    socialMedia: {
+      posts: {
         role: "system",
-        content:`when asked for you will write 4 social media post's in an array of objects with the keys: description,hashtags,AiimagePrompt, then if asked for you will also talk brifly about a sponsore , also only includ emojis if asked for 
-        finaly generate a prompt in english for an ai image model that would fit the subject
-        here are you cratirias:  subject,tone,language,writingStyle,emojis`
-      }
+        content: `When asked for you will  write  4 social media posts that should follow these criteria subject,tone,language,writing Style then if asked for you will include emojis in the post's text , also if asked for it talk briefly about a given sponsor inside of each post description , the response should be in an array of objects with the ONLY keys : descriptions and hashtags`,
+      },
     }
-  }
-}
-     /*
+  },
+  PromptGeneration:{
+    images:'generate me a prompt to input in a AI image generatore model such as stable diffusion try"s to dipict '
+  } 
+};
+/*
+
+  when asked for you will write 4 social media post's in an array of objects with the keys: description,hashtags.
+  you will have to follow the given critiria which are 
+
+
+
+
 i'm goin to give you a text , and you will give me a rating that ranges from 1 being really bad to 100 being exelant for
 overall text ,Readability ,grammer ,  Coherence,Structure
 

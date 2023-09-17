@@ -47,28 +47,22 @@ export default function Home() {
           <Panel
             shaded
             header={
-              <div className="  pt-5 pb-5 rounded p-5 bg-violet-900 flex justify-center ">
-                <span className="text-white text-xl text-center ">
-                  Articles
+              <div className="  pt-5 pb-5 rounded p-5 bg-gray-500 flex justify-start ">
+                <span className="text-white text-xl text-left ">
+                Copywriting
                 </span>
               </div>
             }
             style={panelStyle}
           >
             <div className="flex gap-5 lg:flex-row flex-col flex-wrap">
-               {tools.map((tool)=>{
-                if(tool.categorie=='Article'){
-                  return(
-                    <ToolInfo 
-                    key={tool.id }
-                      id={tool.id}
-                       title={tool.title}
-                       description={tool.description}
-                       icon={tool.icon}
-                    />
-                  )
-                }
-               })}
+              {tools.copywriting.map((tool)=>(
+                <ToolInfo
+                description={tool.description}
+                icon={tool.icon}
+                title={tool.title}
+                />
+              ))}
             </div>
           </Panel>
           
